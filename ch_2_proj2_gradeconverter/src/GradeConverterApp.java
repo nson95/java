@@ -28,6 +28,7 @@ public class GradeConverterApp {
 		
 		System.out.println("Letter grade: "+letterGrade);
 		
+		
 		System.out.println("Continue? (y/n)");
 		choice = sc.next();
 		
