@@ -4,12 +4,14 @@ public class TestScanner {
 
 	public static void main(String[] args) {
 		System.out.println("Welcome");
-		System.out.println("Please enter your number:");
 		
 		Scanner sc = new Scanner(System.in);
+		System.out.print("Please enter your number: ");
 		double userNum = sc.nextDouble();
-		
-		System.out.println("Cool, goodbye!");
+		System.out.print("Your number is " + userNum);
+		System.out.println();
+		System.out.println("Cool, right? Goodbye!");
+		sc.close();
 
 	}
 
