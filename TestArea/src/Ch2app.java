@@ -18,14 +18,25 @@ public class Ch2app {
 		System.out.println("The average of your numbers is  " +avg);
 		
 		
-		if (avg > 10)
-			System.out.println("Woohoo! You win!");
-		else 
-			System.out.println("Oh.. I'm so sorry. You lost.");
+		if (avg > 10) {
+			System.out.println("Woohoo! Over ten, right?");
+		}
+		else {
+			System.out.println("Oh.. I'm so sorry. Under ten, right?");
+		}
 		
 		
+		System.out.println("Enter 'yes' or 'no'");
+		String str = sc.next();
+		if (str.equals("yes")) {
+			System.out.println("Confirmed!");
+			System.out.println("Goodbye!");
+		}
+		if (!str.equals("yes")) {
+			System.out.println("YOU LIE!!");
+			System.out.println("Now you're stuck here..");
+		}
 		
-		System.out.println("Goodbye!");
 		sc.close();
 
 	}
