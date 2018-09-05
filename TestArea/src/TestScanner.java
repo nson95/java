@@ -3,12 +3,13 @@ import java.util.Scanner;
 public class TestScanner {
 
 	public static void main(String[] args) {
-		System.out.println("Please enter your age:  ");
-		System.out.println();
+		System.out.println("Welcome");
+		System.out.println("Please enter your number:");
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Please enter your age:  ");
-		int age = sc.nextInt();
+		double userNum = sc.nextDouble();
+		
+		System.out.println("Cool, goodbye!");
 
 	}
 
