@@ -11,6 +11,7 @@ public class TestScanner {
 		System.out.print("Your number is " + userNum);
 		System.out.println();
 		System.out.println("Cool, right? Goodbye!");
+		
 		sc.close();
 
 	}
