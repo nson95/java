@@ -11,9 +11,19 @@ public class Ch2app {
 		System.out.print("Enter another integer: ");
 		int b = sc.nextInt();
 		
-		double avg = ((double)a +(double)b)/2;
+		double avg = ((double)a +(double)b)
+				/2;
+		
 		
 		System.out.println("The average of your numbers is  " +avg);
+		
+		
+		if (avg > 10)
+			System.out.println("Woohoo! You win!");
+		else 
+			System.out.println("Oh.. I'm so sorry. You lost.");
+		
+		
 		
 		System.out.println("Goodbye!");
 		sc.close();
