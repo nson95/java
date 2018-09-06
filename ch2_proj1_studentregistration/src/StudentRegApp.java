@@ -22,7 +22,7 @@ public class StudentRegApp {
 		System.out.println("Your registration is complete.");
 		System.out.println("Your temporary password is: " +pswd);
 		
-		
+		sc.close();
 
 	}
 
