@@ -9,6 +9,7 @@ public class RectangleCalcApp {
 		Scanner sc = new Scanner(System.in);
 		
 		String choice = "y";
+	
 		while (choice.equalsIgnoreCase("y")) {
 		
 		System.out.println("Enter length: ");
@@ -24,7 +25,7 @@ public class RectangleCalcApp {
 		
 	
 		System.out.println("continue (y/n)");
-		String choice = sc.next();
+		choice = sc.next();
 		
 		} if (!choice.equalsIgnoreCase("y")) {
 			System.out.println("Hope you had a great time, goodbye.");
