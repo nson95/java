@@ -1,4 +1,8 @@
 import java.util.Scanner;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+//import java.text.NumberFormat;
 
 public class MPGApp {
 
@@ -17,8 +21,9 @@ public class MPGApp {
             System.out.print("Enter gallons of gas used: ");
             double gallons = sc.nextDouble();
             
-            double mpg =  Math.round(miles/gallons);
-            System.out.println("Miles per gallon is " + mpg + ".");
+            //double mpg = (miles/gallons);
+            BigDecimal mpgString = new BigDecimal(miles/gallons).setScale(2, RoundingMode.HALF_UP);
+            System.out.println("Miles per gallon is " + mpgString + ".");
             System.out.println(); 
             
             System.out.print("Calculate another MPG? (y/n): ");
