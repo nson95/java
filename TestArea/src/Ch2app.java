@@ -32,12 +32,14 @@ public class Ch2app {
 			System.out.println("Confirmed!");
 			System.out.println("Goodbye!");
 		}
-		if (!str.equals("yes")) {
+		if (!str.equalsIgnoreCase("yes")) {
 			System.out.println("YOU LIE!!");
 			System.out.println("Now you're stuck here..");
 		}
 		
+		
 		sc.close();
+		
 
 	}
 

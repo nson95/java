@@ -17,13 +17,14 @@ public class MPGApp {
             System.out.print("Enter gallons of gas used: ");
             double gallons = sc.nextDouble();
             
-            double mpg = miles/gallons;
+            double mpg =  Math.round(miles/gallons);
             System.out.println("Miles per gallon is " + mpg + ".");
             System.out.println(); 
             
             System.out.print("Calculate another MPG? (y/n): ");
             choice = sc.next();
             System.out.println();
+            
         }
     }
     
