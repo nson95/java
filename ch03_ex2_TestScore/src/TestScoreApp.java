@@ -40,6 +40,8 @@ public class TestScoreApp {
             }
             else if (testScore != 999) 
                 System.out.println("Invalid entry, not counted");
+            
+            
         }
 
         // display the score count, score total, and average score
