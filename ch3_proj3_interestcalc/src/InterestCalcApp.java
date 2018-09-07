@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.NumberFormat;
 
 public class InterestCalcApp {
@@ -11,25 +12,28 @@ public class InterestCalcApp {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Enter loan amount: ");
-		double loan = sc.nextDouble();
+		BigDecimal loan = sc.nextBigDecimal();
 		System.out.print("Enter interest rate: ");
-		double ir = sc.nextDouble();
+		BigDecimal ir = sc.nextBigDecimal();
 		
 		NumberFormat cf = NumberFormat.getCurrencyInstance();
-		System.out.println("Formatted price = " +cf.format(loan));
-		
-		// BigDecimal i
-		
-		
+		System.out.println("Loan amount: " +cf.format(loan));
+		NumberFormat irf = NumberFormat.getPercentInstance();
+		System.out.println("Interest rate: " +irf.format(ir));
 		
 		
-		System.out.println("Loan amount: " +loan);
+		
+		BigDecimal i = ir.multiply(loan).setScale(2, RoundingMode.HALF_UP);
+		
+		
+		
+		NumberFormat ff = NumberFormat.getCurrencyInstance();
+		System.out.println("Interest: " +ff.format(i));
+		
 		
 		
 		System.out.println("goodbye..");
 		
 		
-
 	}
-
 }
