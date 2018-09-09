@@ -43,6 +43,7 @@ public class FutureValueApp {
 
             // see if the user wants to continue
             System.out.print("Continue? (y/n): ");
+
             choice = sc.next();
             sc.nextLine();  // discard any other data entered on the line
             System.out.println();

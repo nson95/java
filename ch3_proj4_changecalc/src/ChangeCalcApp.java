@@ -39,12 +39,14 @@ public class ChangeCalcApp {
 					p=p+1;
 				} else cent=0;
 			
+				  
 			
 		}
 			System.out.println("Quarters: "+q);
 			System.out.println("Dimes: " +d);
 			System.out.println("Nickels: " +n);
 			System.out.println("Pennies: " +p);
+			System.out.println("success");
 				  
 		System.out.print("continue (y/n): ");
 		choice = sc.next();
