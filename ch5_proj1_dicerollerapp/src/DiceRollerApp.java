@@ -25,19 +25,22 @@ public class DiceRollerApp {
 				System.out.print("Die 1: " +a +"\n");
 				System.out.print("Die 2: " +b +"\n");
 				System.out.println("Snake eyes!");
-				System.out.print("Roll Again? (y/n): " +"\n");
+				System.out.print("Roll Again? (y/n): ");
 				choice = sc.next();
+				System.out.println();
 			} else if (a==6 && b==6) {
 				System.out.print("Die 1: " +a +"\n");
 				System.out.print("Die 2: " +b +"\n");
 				System.out.println("Boxcars!");
 				System.out.print("Roll Again? (y/n): " +"\n");
 				choice = sc.next();
+				System.out.println();
 			} else {
 				System.out.print("Die 1: " +a +"\n");
 				System.out.print("Die 2: " +b +"\n"); 
-				System.out.print("Roll Again? (y/n): " +"\n");
+				System.out.print("Roll Again? (y/n): ");
 				choice = sc.next();
+				System.out.println();
 				}
 		}  
 		
