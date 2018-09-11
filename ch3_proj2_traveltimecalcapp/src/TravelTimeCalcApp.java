@@ -13,14 +13,10 @@ public class TravelTimeCalcApp {
 		String choice = "y";
 		
 		while (choice.equalsIgnoreCase("y")) {
-			System.out.print("Enter miles: ");
-			mi = sc.nextDouble();
-			System.out.println();
-			System.out.print("Enter miles per hour: ");
-			mpg = sc.nextDouble();
-			System.out.println();
-			ti = (int) (mi %mpg);
-			System.out.println(ti);
+			mi = getUserMiles(mi);
+			mpg = getUserMpg(mpg);
+			ti = ((int) (mi %mpg)) / 60;
+			System.out.println("Min: " +ti);
 			System.out.print("continue? (y/n): ");
 			choice = sc.next();
 		}
@@ -28,5 +24,12 @@ public class TravelTimeCalcApp {
 		sc.close();
 		System.out.println("goobye");
 	}
-
+	public static double getUserMiles(double mi) {
+		System.out.println("Enter miles: ");
+		return getUserMiles(mi);
+	} 
+	public static double getUserMpg(double mpg) {
+		System.out.println("Enter miles: ");
+		return getUserMpg(mpg);
+	} 
 }
