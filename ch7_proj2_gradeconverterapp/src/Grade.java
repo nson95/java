@@ -18,7 +18,7 @@ public class Grade {
 
 	public void setNumber(int number) {
 		this.number = number;
-	}
+	} 
 
 	public String getLetter() {
 		String lettergrade ="";
