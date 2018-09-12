@@ -29,6 +29,30 @@ public class Dice {
 		this.die2 = die2;
 	}
 	
-	
+	public int getSum() {
+		return die1.getValue()+die2.getValue();
+	}
 
+
+	@Override
+	public String toString() {
+		return "Die 1: " + die1  + "\n" 
+				+ "Die 2: " + die2 + "\n"
+				+ "Total: " +getSum() +"\n" 
+				+displaySpecialMessage();
+	}
+	
+	private String displaySpecialMessage() {
+		String s = "";
+		if (getSum()==7) {
+			s = "Craps";
+		} else if (getSum()==12) {
+			s = "Box Cars!";
+		} else if (getSum()==2) {
+			s = "Snake Eyes!";
+		}
+		s+= "\n";
+		return s;
+	}
+	
 }
