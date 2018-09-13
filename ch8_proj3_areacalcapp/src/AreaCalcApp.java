@@ -7,9 +7,9 @@ public class AreaCalcApp {
 		
 		
 		String choice = "y";
+		String shapeType = Console.getString("Calculate area of a circle, "
+				+ "square, or rectangle? (c/s/r): ");
 		while (choice.equalsIgnoreCase("y")) {
-			String shapeType = Console.getString("Calculate area of a circle, "
-					+ "square, or rectangle? (c/s/r): ");
 			double h = 0.0;
 			double w = 0.0;
 			double r = 0.0;
@@ -30,7 +30,10 @@ public class AreaCalcApp {
 				s = new Rectangle(w, h);
 				break;
 			}
-			System.out.println("Are is " +s.getArea());
+			
+			Class c = s.getClass();
+			System.out.println("The area of the " +c.getName() +" you entered is"
+			+s.getArea());
 			
 			choice = Console.getString("continue: (y/n)? ");
 		}

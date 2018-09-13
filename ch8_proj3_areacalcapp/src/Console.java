@@ -5,33 +5,9 @@ public class Console {
     private static Scanner sc = new Scanner(System.in);
 
     public static String getString(String prompt) {
-    	boolean isValid = false;
-    	String s = "";
-    	while (!isValid) {
         System.out.print(prompt);
-        s = getString(prompt);
-        if (s.equals("")) {
-        	System.out.println("Error! This entry is required.");
-        }
-        else {
-        	isValid = true;
-        }
-    	
-    	}
-		return s;
-    }
-    public static String getString(String prompt, String poss1, String poss2) {
-        
-        String s = getString(prompt);  // read user entry
-        boolean isValid = false;
-        while(!isValid) {
-        	if (s.equalsIgnoreCase("poss1") || s.equalsIgnoreCase(poss2)) {
-        		isValid = true;
-        	}
-        	else {
-        		System.out.println("Error! Entry must be 'y' or 'n'. Try again.");
-        	}
-        }
+        String s = sc.next();  // read user entry
+        sc.nextLine();  // discard any other data entered on the line
         return s;
     }
 
@@ -56,10 +32,10 @@ public class Console {
         boolean isValid = false;
         while (!isValid) {
             i = getInt(prompt);
-            if (i < min) {
+            if (i <= min) {
                 System.out.println(
                         "Error! Number must be greater than " + min + ".");
-            } else if (i > max) {
+            } else if (i >= max) {
                 System.out.println(
                         "Error! Number must be less than " + max + ".");
             } else {
