@@ -9,10 +9,11 @@ public class Employee implements Displayable, DepartmentConstants {
         this.lastName = lastName;
         this.firstName = firstName;
     }
+    Employee employee = new Employee(int , String lastName, String firstName);
 
 	@Override
 	public String getDisplayText() {
-		return "Employee: " +firstName +" " +lastName
-				+"/nDepartment: " +department;
+		return ("Employee: " +firstName +" " +lastName
+				+"/nDepartment: " +department);
 	}
 }

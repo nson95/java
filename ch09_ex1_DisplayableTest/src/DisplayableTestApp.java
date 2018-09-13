@@ -1,4 +1,4 @@
-public class DisplayableTestApp {
+public class DisplayableTestApp implements Displayable {
 
     public static void main(String args[]) {
         System.out.println("Welcome to the Displayable Test application\n");
@@ -14,5 +14,8 @@ public class DisplayableTestApp {
 
     private static void display(Displayable d) {
         System.out.println(d.getDisplayText());
+    }
+    String getDisplayTest(Employee e) {
+    	return null;
     }
 }
