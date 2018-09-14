@@ -9,6 +9,8 @@ public class BoardGame extends Toy {
 		this.pieces = pieces;
 	}
 
+	
+
 	public String getName() {
 		return name;
 	}
