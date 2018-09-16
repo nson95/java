@@ -11,7 +11,7 @@ public class FactorialCalcApp {
 			System.out.println("Enter an integer that's greater than 0 and less than 10: ");
 			int n = sc.nextInt();
 			String numbers = "";
-			for ( 
+			
 			
 		}
 
