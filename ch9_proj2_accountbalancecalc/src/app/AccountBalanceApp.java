@@ -1,9 +1,4 @@
-package app;
 import java.text.NumberFormat;
-
-import CheckingAccount;
-import Console;
-import SavingsAccount;
 
 public class AccountBalanceApp {
 
@@ -14,26 +9,6 @@ public class AccountBalanceApp {
 		
 		
 		
-		System.out.println("Starting balances: ");
-		CheckingAccount ca = new CheckingAccount(1000);
-		SavingsAccount sa = new SavingsAccount(1000);
-		
-		System.out.println("Checking: " +cf.format(ca.getBalance()));
-		System.out.println("Checking: " +cf.format(sa.getBalance()));
-		
-		System.out.println("Enter the transactions for the month");
-		String choice = "y";
-		while(choice.equalsIgnoreCase("y")) {
-			
-			String transType = Console.getString();
-			
-			
-			
-			choice = Console.getString("Continue? (y/n)");
-			
-		}
-		System.out.println("Bye!");
-
 	}
 
 }
