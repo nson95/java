@@ -1,4 +1,5 @@
 
+
 public class Toy {
 	private int id;
 	private String code;
