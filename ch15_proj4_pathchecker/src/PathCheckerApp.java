@@ -21,14 +21,11 @@ public class PathCheckerApp {
 					System.out.println("That path points to a directory.");
 				}
 				
-				
 			} else {
 				System.out.println("That path does not exist.");
 			}
 			choice = Console.getString("Continue? (y/n): ");
 		}
-		
-		
 
 		System.out.println("Goodbye!");
 	}
