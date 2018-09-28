@@ -13,6 +13,7 @@ public class PathCheckerApp {
 			String path = null;
 			path = Console.getString("Enter a path: ");
 			File file = new File(path);
+			System.out.println(file.getAbsolutePath());
 			if (file.exists()) {
 				if (file.isFile()) {
 					System.out.println("That path points to a file.");
