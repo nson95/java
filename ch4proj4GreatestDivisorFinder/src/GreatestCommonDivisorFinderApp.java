@@ -12,16 +12,16 @@ public class GreatestCommonDivisorFinderApp {
 		while (choice.equalsIgnoreCase("y")) {
 		int x = Console.getInt("Enter first number: ");
 		int y = Console.getInt("Enter second number: ");
-		int remainder = 0;
+		int divisor = 0;
 			while (x!=0) {
 				while (x<=y) {
 					y-=x;
 				}
-				remainder = x;
+				divisor = x;
 				x = y;
-				y = remainder;	
+				y = divisor;	
 			}
-			System.out.println("Greatest common divisor: " +remainder);
+			System.out.println("Greatest common divisor: " +divisor);
 			choice = Console.getString("Continue? (y/n) ");
 			}
 			System.out.println("goodbye");
