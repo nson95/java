@@ -13,6 +13,8 @@ public class GreatestCommonDivisorFinderApp {
 		int x = Console.getInt("Enter first number: ");
 		int y = Console.getInt("Enter second number: ");
 		int divisor = 0;
+		boolean isValid = false;
+		while (!isValid) {
 			while (x!=0) {
 				while (x<=y) {
 					y-=x;
@@ -21,6 +23,7 @@ public class GreatestCommonDivisorFinderApp {
 				x = y;
 				y = divisor;	
 			}
+		}
 			System.out.println("Greatest common divisor: " +divisor);
 			choice = Console.getString("Continue? (y/n) ");
 			}
