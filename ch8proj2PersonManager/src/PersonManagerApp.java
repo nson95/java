@@ -12,14 +12,14 @@ public class PersonManagerApp {
 				String fn = Console.getString("Please enter your first name: ");
 				String ln = Console.getString("Please enter your last name: ");
 				Customer c = new Customer(fn, ln, "82");
-				
+				System.out.println("Customer successfully registered: " +c.toString());
 			} 
 			if (nc.equalsIgnoreCase("e")) {
 				String fn = Console.getString("Please enter your first name: ");
 				String ln = Console.getString("Please enter your last name: ");
 				String ssn = Console.getString("Please enter your social security number: ");
 				Employee e = new Employee(fn, ln, ssn);
-				System.out.println("Employee successfully registered: " +fn +" " +ln);
+				System.out.println("Employee successfully registered: " +e.toString());
 			}
 			choice = Console.getString("Continue?", "y", "n");
 		}
