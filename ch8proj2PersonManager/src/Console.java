@@ -92,6 +92,7 @@ public class Console {
         return s;
     }
     public static String getString(String prompt, String s1, String s2){
+    	prompt += " ";
         String s = "";
         boolean isValid = false;
         while (isValid == false) {
