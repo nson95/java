@@ -25,6 +25,10 @@ public class PersonManagerApp {
 				System.out.println("Employee successfully registered: " +e.toString());
 			}
 			choice = Console.getString("Continue?", "y", "n");
+			if (choice.equalsIgnoreCase("n")) {
+				System.out.println(people);
+			}
+			
 		}
 		System.out.println("Goodbye!");
 	}
