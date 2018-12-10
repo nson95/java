@@ -28,4 +28,31 @@ public class StackCalculator {
 		}
 		stack.add(c);
 	}
+	public void multiply() {
+		double a = stack.remove(stack.size());
+		double b = stack.remove(stack.size()-1);
+		double c = a*b;
+		stack.add(c);
+	}
+	public void divide() {
+		double a = stack.remove(stack.size());
+		double b = stack.remove(stack.size()-1);
+		double c  = 0;
+		if (a>b) {
+			c = a/b;
+		}
+		else if (a<b) {
+			c = b/a;
+		}
+		stack.add(c);
+	}
+	public void clear() {
+		stack.clear();
+	}
+	public Object[] getValues() {
+		return stack.toArray();
+	}
+	public int getSize() {
+		return stack.size();
+	}
 }
