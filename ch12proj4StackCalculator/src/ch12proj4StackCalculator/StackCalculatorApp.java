@@ -35,7 +35,7 @@ public class StackCalculatorApp {
 				System.out.println(stCalc.toString());
 			}
 		} 
-		System.out.println("Goodbye!");
+		System.out.println("Goodbye!" +"");
 	}
 
 }
