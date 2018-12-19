@@ -29,13 +29,13 @@ public class StackCalculatorApp {
 				System.out.println(stCalc.toString());
 			} else if (choice.equalsIgnoreCase("div")) {
 				stCalc.divide();
-				System.out.println(stCalc.toString());
+				System.out.println(stCalc.toString() +"");
 			} else if (choice.equalsIgnoreCase("clear")) {
 				stCalc.clear();
-				System.out.println(stCalc.toString());
+				System.out.println(stCalc.toString() +"");
 			}
 		} 
-		System.out.println("Goodbye!" +"");
+		System.out.println("Goodbye!");
 	}
 
 }
