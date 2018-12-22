@@ -16,7 +16,7 @@ public class StackCalculatorApp {
 		while (!choice.equalsIgnoreCase("quit")) {
 			choice = sc.next();
 			if (choice.equalsIgnoreCase("push")) {
-				double num = Console.getDouble(" ");
+				double num = Console.getDouble("");
 				stCalc.push(num);
 				choice = "";
 			} else if (choice.equalsIgnoreCase("add")) {
