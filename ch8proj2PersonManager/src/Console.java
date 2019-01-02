@@ -24,7 +24,7 @@ public class Console {
                 i = sc.nextInt();
                 isValid = true;
             } else {
-                println("Error! Invalid integer. Try again.");
+                println("Error! Invalid integer. Try again." + " ");
             }
             sc.nextLine(); // discard any other data entered on the line
         }
