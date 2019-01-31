@@ -13,8 +13,17 @@ public class DiceRollerApp {
 		while (choice.equalsIgnoreCase("y")) {
 			int a = rollTheDice();
 			int b = rollTheDice();
-			System.out.println("Die 1: " +a +"\r"
-					+"Die 2: " +b);
+			if (a+b==12) {
+				System.out.println("Die 1: " +a +"\r"
+					+"Die 2: " +b +"\r"
+					+"Boxcars!");
+			} else if (a+b==2) {
+				System.out.println("Die 1: " +a +"\r"
+						+"Die 2: " +b +"\r"
+						+"Snake Eyes!");
+			} else 
+				System.out.println("Die 1: " +a +"\r"
+						+"Die 2: " +b);
 			System.out.print("Continue? (y/n) ");
 			choice = sc.next();
 		}
