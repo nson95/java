@@ -7,6 +7,7 @@ public class DiceRollerApp {
 	public static void main(String[] args) {
 		System.out.println("Dice Roller");
 		System.out.println();
+		System.out.println();
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Roll the dice? (y/n): ");
 		String choice = sc.next();
