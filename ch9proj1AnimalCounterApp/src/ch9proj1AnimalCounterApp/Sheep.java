@@ -8,6 +8,4 @@ public class Sheep extends Animal {
 		this.count = count;
 		this.name = name;
 	}
-	
-	
 }
